@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tambah Menu | Seblak Prasmanan</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #faf7f2;
+    }
+    .heading {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+
+<body class="text-[#351d20]">
+
+  <div class="min-h-screen md:flex">
+
+    <!-- SIDEBAR -->
+    <aside class="w-full md:w-64 bg-[#351d20] text-white p-6">
+      <div class="mb-10">
+        <h1 class="heading text-2xl font-bold">Seblak.</h1>
+        <p class="text-xs text-[#e7c9bd] mt-1">Admin Panel</p>
+      </div>
+
+      <p class="text-xs uppercase tracking-widest text-[#c8a9a0] mb-4">
+        Menu Utama
+      </p>
+
+      <nav class="space-y-2">
+        <a href="index.html"
+          class="block rounded-xl px-4 py-3 text-sm text-[#eadbd5] hover:bg-[#512a30]">
+          Dashboard
+        </a>
+
+        <a href="tabel.html"
+          class="block rounded-xl px-4 py-3 text-sm text-[#eadbd5] hover:bg-[#512a30]">
+          Data Menu
+        </a>
+
+        <a href="form.html"
+          class="block rounded-xl bg-[#641f2b] px-4 py-3 text-sm font-semibold">
+          Tambah Menu
+        </a>
+      </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="flex-1 p-5 md:p-8">
+
+      <header class="mb-8">
+        <p class="text-sm text-gray-500">Manajemen Menu</p>
+        <h2 class="heading text-3xl font-bold mt-1">Tambah Menu</h2>
+        <p class="text-sm text-gray-500 mt-2">
+          Masukkan informasi menu baru Seblak Prasmanan.
+        </p>
+      </header>
+
+      <!-- FORM CARD -->
+      <section class="max-w-3xl bg-white rounded-2xl shadow-sm p-5 md:p-8">
+
+        <div class="border-b border-gray-100 pb-5 mb-6">
+          <h3 class="font-bold text-xl">Informasi Menu</h3>
+          <p class="text-sm text-gray-400 mt-1">
+            Isi data menu pada kolom berikut.
+          </p>
+        </div>
+
+        <form action="#" method="POST" class="space-y-5">
+
+          <!-- NAMA -->
+          <div>
+            <label class="block text-sm font-semibold mb-2">
+              Nama Menu
+            </label>
+
+            <input type="text"
+              placeholder="Contoh: Seblak Original"
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-[#641f2b]">
+          </div>
+
+          <!-- KATEGORI -->
+          <div>
+            <label class="block text-sm font-semibold mb-2">
+              Kategori Menu
+            </label>
+
+            <select
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-[#641f2b]">
+
+              <option value="">Pilih kategori</option>
+              <option>Seblak</option>
+              <option>Kerupuk dan Pasta</option>
+              <option>Bakso dan Seafood</option>
+              <option>Ayam dan Pelengkap</option>
+              <option>Sayur dan Jamur</option>
+              <option>Topping Modern</option>
+              <option>Minuman</option>
+
+            </select>
+          </div>
+
+          <!-- HARGA -->
+          <div>
+            <label class="block text-sm font-semibold mb-2">
+              Harga Menu
+            </label>
+
+            <input type="number"
+              placeholder="Contoh: 12000"
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-[#641f2b]">
+          </div>
+
+          <!-- DESKRIPSI -->
+          <div>
+            <label class="block text-sm font-semibold mb-2">
+              Deskripsi Menu
+            </label>
+
+            <textarea rows="4"
+              placeholder="Tuliskan deskripsi menu..."
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-[#641f2b]"></textarea>
+          </div>
+
+          <!-- STATUS -->
+          <div>
+            <label class="block text-sm font-semibold mb-2">
+              Status Menu
+            </label>
+
+            <select
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm">
+              <option>Tersedia</option>
+              <option>Habis</option>
+            </select>
+          </div>
+
+          <!-- TODO: Tambahkan upload gambar menu di sini -->
+
+          <!-- BUTTON -->
+          <div class="flex flex-wrap gap-3 pt-4">
+
+            <button type="submit"
+              class="bg-[#641f2b] text-white rounded-xl px-6 py-3 text-sm font-semibold">
+              Simpan Menu
+            </button>
+
+            <a href="tabel.html"
+              class="border border-gray-200 rounded-xl px-6 py-3 text-sm font-semibold">
+              Kembali
+            </a>
+
+          </div>
+
+        </form>
+
+        <!-- TODO:
+          1. Buat preview gambar.
+          2. Buat validasi input.
+          3. Buat notifikasi setelah menyimpan.
+          4. Hubungkan form dengan penyimpanan data.
+        -->
+
+      </section>
+
+      <footer class="text-center text-xs text-gray-400 mt-10">
+        © 2026 Seblak Prasmanan.
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+</html>
