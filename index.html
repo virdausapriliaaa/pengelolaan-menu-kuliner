@@ -1,239 +1,355 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Admin | Seblak Prasmanan</title>
-
+  <title>Seblak District — Dashboard</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: #faf7f2;
-    }
-    .heading {
-      font-family: 'Playfair Display', serif;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="text-[#351d20]">
+<body class="bg-[#101923] text-[#f5f3e9] font-['DM_Sans']">
 
-  <div class="min-h-screen md:flex">
+  <!-- NAVBAR -->
+  <header class="border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-    <!-- SIDEBAR -->
-    <aside class="w-full md:w-64 bg-[#351d20] text-white p-6">
-      <div class="mb-10">
-        <h1 class="heading text-2xl font-bold">Seblak.</h1>
-        <p class="text-xs text-[#e7c9bd] mt-1">Admin Panel</p>
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="bg-[#d5ff45] text-[#101923] w-10 h-10 flex items-center justify-center font-black text-xl rounded-xl">
+          S.
+        </div>
+
+        <div>
+          <h1 class="font-black tracking-wider text-lg">SEBLAK<span class="text-[#d5ff45]">.</span></h1>
+          <p class="text-[9px] tracking-[3px] text-gray-400">DISTRICT KITCHEN</p>
+        </div>
+      </a>
+
+      <div class="hidden md:flex gap-8 text-sm font-semibold">
+        <a href="index.html" class="text-[#d5ff45]">Dashboard</a>
+        <a href="tabel.html" class="hover:text-[#d5ff45] transition">Katalog Menu</a>
+        <a href="form.html" class="hover:text-[#d5ff45] transition">Tambah Menu</a>
       </div>
 
-      <p class="text-xs uppercase tracking-widest text-[#c8a9a0] mb-4">
-        Menu Utama
-      </p>
+      <div class="text-xs border border-white/20 px-4 py-2 rounded-full">
+        <span class="text-[#d5ff45]">●</span> OPEN TODAY
+      </div>
 
-      <nav class="space-y-2">
-        <a href="index.html"
-          class="block rounded-xl bg-[#641f2b] px-4 py-3 text-sm font-semibold">
-          Dashboard
-        </a>
+    </nav>
+  </header>
 
-        <a href="tabel.html"
-          class="block rounded-xl px-4 py-3 text-sm text-[#eadbd5] hover:bg-[#512a30]">
-          Data Menu
-        </a>
 
-        <a href="form.html"
-          class="block rounded-xl px-4 py-3 text-sm text-[#eadbd5] hover:bg-[#512a30]">
-          Tambah Menu
-        </a>
-      </nav>
+  <main class="max-w-7xl mx-auto px-6">
 
-      <div class="mt-12 rounded-xl border border-[#76545a] p-4">
-        <p class="text-sm font-semibold">Seblak Prasmanan</p>
-        <p class="text-xs text-[#d9c1b9] mt-1">
-          Racik Sesukamu, Pedas Sesukamu!
+    <!-- HERO -->
+    <section class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center py-10 md:py-12">
+
+      <!-- HERO TEXT -->
+      <div>
+
+        <p class="text-[#d5ff45] text-[11px] font-bold tracking-[4px] mb-5">
+          WELCOME TO THE KITCHEN / 001
         </p>
-      </div>
-    </aside>
 
-    <!-- MAIN CONTENT -->
-    <main class="flex-1 p-5 md:p-8">
+        <h2 class="font-['Space_Grotesk'] text-5xl sm:text-6xl lg:text-7xl font-bold leading-[0.98] tracking-tight">
+          PEDAS<br>
+          <span class="text-[#d5ff45]">GILA.</span><br>
+          NIKMAT<span class="text-[#d5ff45]">.</span>
+        </h2>
 
-      <!-- HEADER -->
-      <header class="flex flex-wrap items-center justify-between gap-4 mb-8">
-        <div>
-          <p class="text-sm text-gray-500">Halaman Admin</p>
-          <h2 class="heading text-3xl font-bold mt-1">Dashboard</h2>
-        </div>
-
-        <div class="rounded-xl bg-white px-4 py-3 shadow-sm">
-          <p class="text-sm font-semibold">Administrator</p>
-          <p class="text-xs text-gray-500">Pengelola Toko</p>
-        </div>
-      </header>
-
-      <!-- WELCOME -->
-      <section class="bg-[#641f2b] text-white rounded-2xl p-6 md:p-8 mb-7">
-        <p class="text-sm text-[#ead1cb]">Selamat datang kembali!</p>
-        <h3 class="heading text-2xl md:text-3xl font-bold mt-2">
-          Kelola Seblak Prasmanan
-        </h3>
-        <p class="text-sm text-[#ead1cb] mt-2">
-          Pantau data menu dan aktivitas tokomu melalui halaman admin.
+        <p class="text-gray-400 mt-6 max-w-md text-sm leading-7">
+          Satu tempat untuk semua rasa. Kelola menu, pantau koleksi
+          makanan, dan ciptakan pengalaman seblak yang nggak terlupakan.
         </p>
-      </section>
 
-      <!-- STATISTICS -->
-      <section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+        <!-- BUTTON -->
+        <div class="flex flex-wrap gap-3 mt-7">
 
-        <div class="bg-white rounded-2xl p-5 shadow-sm">
-          <p class="text-sm text-gray-500">Total Menu</p>
-          <h3 class="text-3xl font-bold mt-3">30</h3>
-          <p class="text-xs text-[#641f2b] mt-2">Menu tersedia</p>
-        </div>
-
-        <div class="bg-white rounded-2xl p-5 shadow-sm">
-          <p class="text-sm text-gray-500">Kategori</p>
-          <h3 class="text-3xl font-bold mt-3">6</h3>
-          <p class="text-xs text-[#641f2b] mt-2">Kategori menu</p>
-        </div>
-
-        <div class="bg-white rounded-2xl p-5 shadow-sm">
-          <p class="text-sm text-gray-500">Total Pesanan</p>
-          <h3 class="text-3xl font-bold mt-3">125</h3>
-          <p class="text-xs text-green-600 mt-2">Data contoh</p>
-        </div>
-
-        <div class="bg-white rounded-2xl p-5 shadow-sm">
-          <p class="text-sm text-gray-500">Pendapatan</p>
-          <h3 class="text-2xl font-bold mt-3">Rp2,5 Jt</h3>
-          <p class="text-xs text-gray-400 mt-2">Data contoh</p>
-        </div>
-
-      </section>
-
-      <!-- CONTENT GRID -->
-      <section class="grid grid-cols-1 lg:grid-cols-3 gap-5">
-
-        
-<!-- BEST SELLER -->
-<div class="lg:col-span-2 bg-white rounded-2xl p-5 shadow-sm">
-
-  <div class="flex justify-between items-center mb-5">
-    <div>
-      <h3 class="font-bold text-lg">Menu Best Seller</h3>
-      <p class="text-xs text-gray-400 mt-1">
-        Menu paling banyak diminati pelanggan
-      </p>
-    </div>
-
-    <span class="bg-[#f8e8e8] text-[#641f2b] px-3 py-1 rounded-full text-xs font-semibold">
-      Top 3
-    </span>
-  </div>
-
-  <div class="space-y-4">
-
-    <!-- BEST SELLER 1 -->
-    <div class="flex items-center justify-between border-b pb-4">
-      <div class="flex items-center gap-3">
-        <span class="bg-[#641f2b] text-white w-8 h-8 rounded-lg flex items-center justify-center font-bold">
-          1
-        </span>
-        <div>
-          <p class="font-semibold text-sm">Seblak Original</p>
-          <p class="text-xs text-gray-400">Kategori Seblak</p>
-        </div>
-      </div>
-      <div class="text-right">
-        <p class="font-semibold text-sm">Rp12.000</p>
-        <p class="text-xs text-green-600">Best Seller</p>
-      </div>
-    </div>
-
-    <!-- BEST SELLER 2 -->
-    <div class="flex items-center justify-between border-b pb-4">
-      <div class="flex items-center gap-3">
-        <span class="bg-[#f1dede] text-[#641f2b] w-8 h-8 rounded-lg flex items-center justify-center font-bold">
-          2
-        </span>
-        <div>
-          <p class="font-semibold text-sm">Baso Aci</p>
-          <p class="text-xs text-gray-400">Kategori Bakso</p>
-        </div>
-      </div>
-      <div class="text-right">
-        <p class="font-semibold text-sm">Rp3.000</p>
-        <p class="text-xs text-green-600">Best Seller</p>
-      </div>
-    </div>
-
-    <!-- BEST SELLER 3 -->
-    <div class="flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <span class="bg-[#f1dede] text-[#641f2b] w-8 h-8 rounded-lg flex items-center justify-center font-bold">
-          3
-        </span>
-        <div>
-          <p class="font-semibold text-sm">Dumpling</p>
-          <p class="text-xs text-gray-400">Kategori Kerupuk</p>
-        </div>
-      </div>
-      <div class="text-right">
-        <p class="font-semibold text-sm">Rp2.000</p>
-        <p class="text-xs text-green-600">Best Seller</p>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-
-        <!-- QUICK ACTION -->
-        <div class="bg-white rounded-2xl p-5 shadow-sm">
-          <h3 class="font-bold text-lg mb-4">Aksi Cepat</h3>
+          <a href="tabel.html"
+            class="bg-[#d5ff45] text-[#101923] px-6 py-3.5 rounded-full font-bold text-sm hover:bg-white transition">
+            Jelajahi Menu ↗
+          </a>
 
           <a href="form.html"
-            class="block text-center bg-[#641f2b] text-white rounded-xl px-4 py-3 text-sm font-semibold">
+            class="border border-white/30 px-6 py-3.5 rounded-full font-bold text-sm hover:border-[#d5ff45] hover:text-[#d5ff45] transition">
             + Tambah Menu
           </a>
 
-          <a href="tabel.html"
-            class="block text-center border border-[#641f2b] text-[#641f2b] rounded-xl px-4 py-3 text-sm font-semibold mt-3">
-            Lihat Data Menu
-          </a>
+        </div>
 
-          <!-- TODO: Tambahkan informasi aktivitas admin -->
-          <div class="mt-6 border-t pt-5">
-            <p class="font-semibold text-sm">Aktivitas Terbaru</p>
-            <p class="text-xs text-gray-400 mt-3">
-              Bagian aktivitas masih dalam pengembangan...
-            </p>
+      </div>
+
+
+      <!-- HERO IMAGE -->
+      <div class="relative lg:-translate-y-5">
+
+        <div class="bg-[#ed713b] rounded-[30px] p-3 rotate-1 max-w-lg mx-auto">
+
+          <div class="bg-[#f5f0df] rounded-[23px] p-4 text-[#101923]">
+
+            <div class="flex justify-between items-center">
+              <span class="text-[10px] font-black tracking-widest">HOT MENU / 01</span>
+              <span class="text-[10px] font-bold">★ BEST SELLER</span>
+            </div>
+
+            <img
+              src="../img/seblak.jpg"
+              alt="Seblak Full Topping"
+              class="w-full h-56 md:h-64 object-cover rounded-2xl mt-3"
+            >
+
+            <div class="flex justify-between items-end mt-4 gap-3">
+
+              <div>
+                <p class="text-[10px] text-gray-500 font-bold">SIGNATURE DISH</p>
+                <h3 class="font-['Space_Grotesk'] text-xl md:text-2xl font-black mt-1">
+                  Seblak Full Topping
+                </h3>
+              </div>
+
+              <p class="font-black text-xl whitespace-nowrap">60K</p>
+
+            </div>
+
           </div>
         </div>
 
-      </section>
+        <!-- BADGE -->
+        <div class="absolute -bottom-4 -left-3 bg-[#d5ff45] text-[#101923] rounded-full w-16 h-16 flex items-center justify-center text-center font-black text-[9px] -rotate-12">
+          MADE<br>WITH<br>LOVE!
+        </div>
 
-      <!-- TODO:
-        1. Tambahkan grafik penjualan.
-        2. Tambahkan informasi menu terlaris.
-        3. Tambahkan filter tanggal.
-      -->
+      </div>
 
-      <footer class="text-center text-xs text-gray-400 mt-10">
-        © 2026 Seblak Prasmanan. Admin Dashboard.
-      </footer>
+    </section>
 
-    </main>
-  </div>
+
+    <!-- RUNNING LABEL -->
+    <section class="border-y border-white/15 py-4 my-8">
+
+      <p class="text-[#d5ff45] text-center font-black tracking-[3px] text-xs md:text-sm">
+        SPICY • SAVORY • FRESH • DELICIOUS • SPICY • SAVORY
+      </p>
+
+    </section>
+
+
+    <!-- STATISTIK -->
+    <section class="mt-12">
+
+      <div class="flex justify-between items-end mb-5">
+
+        <div>
+          <p class="text-[#d5ff45] text-[10px] tracking-[3px] font-bold">
+            KITCHEN OVERVIEW
+          </p>
+
+          <h2 class="font-['Space_Grotesk'] text-2xl md:text-3xl font-bold mt-2">
+            Today's Report.
+          </h2>
+        </div>
+
+        <span class="text-gray-500 text-[10px]">DATA SIMULASI</span>
+
+      </div>
+
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+
+        <div class="bg-[#1b2936] p-5 rounded-2xl border border-white/5">
+          <p class="text-gray-400 text-xs">Total Menu</p>
+          <h3 class="font-['Space_Grotesk'] text-3xl font-bold mt-3">53</h3>
+          <p class="text-[#d5ff45] text-[10px] mt-2 font-bold">ITEM TERDAFTAR</p>
+        </div>
+
+        <div class="bg-[#d5ff45] text-[#101923] p-5 rounded-2xl">
+          <p class="text-xs font-semibold">Kategori</p>
+          <h3 class="font-['Space_Grotesk'] text-3xl font-bold mt-3">53</h3>
+          <p class="text-[10px] mt-2 font-bold">KATEGORI MENU</p>
+        </div>
+
+        <div class="bg-[#1b2936] p-5 rounded-2xl border border-white/5">
+          <p class="text-gray-400 text-xs">Best Seller</p>
+          <h3 class="font-['Space_Grotesk'] text-3xl font-bold mt-3">03</h3>
+          <p class="text-[#ed713b] text-[10px] mt-2 font-bold">MENU FAVORIT</p>
+        </div>
+
+        <div class="bg-[#1b2936] p-5 rounded-2xl border border-white/5">
+          <p class="text-gray-400 text-xs">Status Menu</p>
+          <h3 class="font-['Space_Grotesk'] text-2xl font-bold mt-3">Aktif</h3>
+          <p class="text-[#d5ff45] text-[10px] mt-2 font-bold">● OPERASIONAL</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BEST SELLER -->
+    <section class="mt-14">
+
+      <div class="flex justify-between items-end mb-6">
+
+        <div>
+          <p class="text-[#ed713b] text-[10px] tracking-[3px] font-bold">
+            THE CROWD FAVORITES
+          </p>
+
+          <h2 class="font-['Space_Grotesk'] text-2xl md:text-3xl font-bold mt-2">
+            Menu Best Seller<span class="text-[#d5ff45]">.</span>
+          </h2>
+        </div>
+
+        <a href="tabel.html" class="text-[#d5ff45] text-xs md:text-sm font-bold hover:text-white transition">
+          Lihat Semua ↗
+        </a>
+
+      </div>
+
+
+      <div class="grid md:grid-cols-3 gap-4">
+
+        <!-- MENU 1 -->
+        <article class="bg-[#1b2936] rounded-2xl overflow-hidden group">
+
+          <img
+            src="../img/seblak.jpg"
+            alt="Seblak Full Topping"
+            class="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
+          >
+
+          <div class="p-4">
+
+            <span class="text-[#d5ff45] text-[9px] font-bold tracking-widest">
+              01 / SIGNATURE
+            </span>
+
+            <h3 class="text-base font-bold mt-2">
+              Seblak Full Topping
+            </h3>
+
+            <div class="flex justify-between mt-3">
+              <span class="text-[#d5ff45] text-sm font-bold">Rp60.000</span>
+              <span class="text-gray-400 text-[10px]">★ Favorit</span>
+            </div>
+
+          </div>
+        </article>
+
+
+        <!-- MENU 2 -->
+        <article class="bg-[#1b2936] rounded-2xl overflow-hidden group">
+
+          <img
+            src="../img/cuanki.jpg"
+            alt="Seblak Cuanki Lidah"
+            class="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
+          >
+
+          <div class="p-4">
+
+            <span class="text-[#ed713b] text-[9px] font-bold tracking-widest">
+              02 / SIGNATURE
+            </span>
+
+            <h3 class="text-base font-bold mt-2">
+              Seblak Cuanki Lidah
+            </h3>
+
+            <div class="flex justify-between mt-3">
+              <span class="text-[#d5ff45] text-sm font-bold">Rp15.000</span>
+              <span class="text-gray-400 text-[10px]">★ Favorit</span>
+            </div>
+
+          </div>
+        </article>
+
+
+        <!-- MENU 3 -->
+        <article class="bg-[#1b2936] rounded-2xl overflow-hidden group">
+
+          <img
+            src="../img/ceker.jpg"
+            alt="Seblak Ceker"
+            class="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
+          >
+
+          <div class="p-4">
+
+            <span class="text-[#d5ff45] text-[9px] font-bold tracking-widest">
+              03 / SIGNATURE
+            </span>
+
+            <h3 class="text-base font-bold mt-2">
+              Seblak Ceker
+            </h3>
+
+            <div class="flex justify-between mt-3">
+              <span class="text-[#d5ff45] text-sm font-bold">Rp18.000</span>
+              <span class="text-gray-400 text-[10px]">★ Favorit</span>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER CTA -->
+    <section class="mt-14 bg-[#ed713b] text-[#101923] rounded-3xl p-7 md:p-9 flex flex-col md:flex-row justify-between items-center gap-5">
+
+      <div>
+        <p class="text-[10px] font-black tracking-widest">
+          GOT SOMETHING NEW?
+        </p>
+
+        <h2 class="font-['Space_Grotesk'] text-2xl md:text-3xl font-black mt-2">
+          Add Your Next Favorite Menu.
+        </h2>
+
+        <p class="text-xs mt-2">
+          Tambahkan pilihan menu baru ke dalam koleksi.
+        </p>
+      </div>
+
+      <a href="form.html"
+        class="bg-[#101923] text-white px-6 py-3.5 rounded-full font-bold text-sm hover:bg-white hover:text-[#101923] transition whitespace-nowrap">
+        + Create Menu
+      </a>
+
+    </section>
+
+
+    <!-- NAVIGASI BAWAH -->
+    <div class="flex justify-between mt-9 mb-8 text-xs text-gray-400">
+
+      <a href="tabel.html" class="hover:text-[#d5ff45]">
+        ← Katalog Menu
+      </a>
+
+      <a href="form.html" class="hover:text-[#d5ff45]">
+        Tambah Menu →
+      </a>
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-7 text-center">
+
+    <p class="font-black tracking-widest">
+      SEBLAK DISTRICT<span class="text-[#d5ff45]">.</span>
+    </p>
+
+    <p class="text-gray-500 text-[10px] mt-2 tracking-wider">
+      GOOD FOOD. GOOD MOOD. © 2026
+    </p>
+
+  </footer>
 
 </body>
 </html>
